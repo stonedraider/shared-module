@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { GreeterModule } from '../../lib/greeter/greeter.module';
+import { FooterModule } from '../../lib/footer/footer.module';
+import { ModalModule } from '../../lib/ng2-bs3-modal/modal.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { GreeterModule } from '../../lib/greeter/greeter.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    GreeterModule
+    ModalModule,
+    GreeterModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
