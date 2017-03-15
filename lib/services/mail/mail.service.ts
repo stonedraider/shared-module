@@ -1,6 +1,8 @@
 import { Injectable, Component } from '@angular/core';
 import { Http, Response, RequestOptions } from '@angular/http';
 
+import 'rxjs/add/operator/toPromise';
+
 @Injectable()
 
 export class MailService {
