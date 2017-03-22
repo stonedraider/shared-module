@@ -1,9 +1,3 @@
-<demo-greeter name="John Doe"></demo-greeter>
-<br>
-<br>
-<!--<button type="button" class="btn btn-primary" [(ngModel)]="switchButtonModel" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
-    Login
-</button>-->
 <div id="divUserMenu" uib-dropdown keyboard-nav (keyup.enter)="Login()">
     <button id="simple-btn-keyboard-nav" type="button" (click)="isVisible = !isVisible; onLoginDialogClick()" class="btn btnOpenUserMenu"
         uib-dropdown-toggle>
@@ -20,5 +14,3 @@
         </li>
     </ul>
 </div>
-<login-dialog (loginSuccess)="loginSuccess($event)">></login-dialog>
-<app-footer></app-footer>

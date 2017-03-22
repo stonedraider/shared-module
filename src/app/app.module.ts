@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { ModalModule } from '../../lib/ng2-bs3-modal/modal.module';
 import { GreeterModule } from '../../lib/greeter/greeter.module';
+
+import { ModalModule } from '../../lib/ng2-bs3-modal/modal.module';
 import { FooterModule } from '../../lib/footer/footer.module';
 import { KontaktformularModule } from '../../lib/footer/kontaktformular/kontaktformular.module';
+
+import { LoginModule } from '../../lib/login/login.module'
+// import { LoginService } from './../../lib/login/login.service';
+
+import { AppComponent } from './app.component';
+// import { LoginDialogComponent } from './../../lib/login/login-dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,8 @@ import { KontaktformularModule } from '../../lib/footer/kontaktformular/kontaktf
     ModalModule,
     GreeterModule,
     FooterModule,
-    KontaktformularModule
+    KontaktformularModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

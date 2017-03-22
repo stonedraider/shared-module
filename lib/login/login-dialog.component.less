@@ -1,0 +1,81 @@
+@import url("../../src/styles.less");
+
+:host {
+    position: absolute;
+    height: 44px;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#divUserMenu {
+    height: 100%;
+}
+
+.btnOpenUserMenu {
+    color: white;
+    background-color: @GeokDarkBlue;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 0 20px 0 20px;
+}
+.btnOpenUserMenu:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btnOpenUserMenu:hover {
+    background-color: @GeokLightBlue;
+}
+
+.dropdown-menu {
+    left: auto;
+    right: 0 !important;
+    padding: 50px 50px 40px 50px;
+    width: 450px;
+}
+
+.open {
+    display: block;
+    text-align: right;
+}
+
+.lblLogin, .lblPassword {
+    text-align: left;    
+    color: @GeokDarkGrey;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+#txtLogin, #txtPassword {
+    width: 100%;
+    height: 44px;
+}
+.lblPassword {
+    margin-top: 25px;
+}
+
+.liDropdownButtons {
+    padding-top: 40px;
+}
+#btnLogin, #btnCancel {
+    width: 145px;
+    height: 44px;
+}
+#btnLogin:hover, #btnCancel:hover {
+    background-color: @GeokLightBlue;
+}
+#btnCancel {
+    color: @GeokDarkBlue;
+    background-color: white;
+    float: left;
+    border-color: @GeokDarkBlue;
+}
+#btnLogin {
+    color: white;
+    background-color: @GeokDarkBlue;
+    float: right;
+}
